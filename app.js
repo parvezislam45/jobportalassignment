@@ -14,10 +14,10 @@ const companyRoute = require("./routes/company.route");
 const jobRoute = require("./routes/jobs.route");
 
 app.get("/", (req, res) => {
-  res.send("Welcome to David Job Portal Management System");
+  res.send("Welcome to David Job Management System");
 });
 
-
+// --------------- App Use --------------------
 app.use("/api/v1/user", userRoute);
 app.use("/api/v1/company", companyRoute);
 app.use("/api/v1", jobRoute);
